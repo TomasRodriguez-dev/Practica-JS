@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica JS</title>
+    <link rel="stylesheet" href="../CSS/styleEjercicios.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Tomas Javier Rodriguez Ocampo -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Ejercicios JavaScript</h1>
+    </header>
+    <!-- Cuerpo -->
+    <main>
+        <!-- Contenedor Principal -->
+        <div class="container mt-5">
+            <!-- Contenedor Carta -->
+            <div class="content">
+                <div class="g-3 mb-3 row">
+                    <div class="order-xx1-1 order-xx1-3 col-sm-8 mx-auto">
+                        <!-- Margen Carta --> 
+                        <div class="h-100 card shadow">
+                            <!-- Encabezado Carta --> 
+                            <div class="py-2 bg-dark card-header">
+                                <div class="col">
+                                    <h3 class="card-title text-center text-white">Calculo Promedios de Edades </h3>
+                                </div>
+                            </div>
+                            <!-- Cuerpo Carta --> 
+                            <div class="d-flex flex-column align-items-between h-100 card-body">
+                                <!-- Titulo -->
+                                <div class="col mb-3">
+                                    <h4 class="card-title text-center">Ingrese los siguientes datos:</h4>
+                                </div>
+                                <!-- Input y Label Flotante -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="cantidad_salones" min="1" placeholder="Ingrese la cantidad de salones que tiene la escuela">
+                                    <label for="cantidad_salones">Ingrese la cantidad de salones que tiene la escuela</label>
+                                </div>
+                                <!-- Salones a ingresar -->
+                                <div id="salones_ingresados">
+                                    <!-- En este div se va a generar el campo para que el directivo ingrese primero la cantidad de alumnos en el salon y luego la edad de cada uno de los alumnos que tiene el salon -->
+                                </div>
+                                <!-- Resultado calculo del promedio de edades en los salones y en toda la escuela -->
+                                <div id="resultado_promedio">
+                                    <!-- En este div se va a mostrar el resultado del promedio de edad total que tiene la escuela sacado de cada salon que cuenta dicha escuela -->
+                                </div>
+                            </div> 
+                            <!-- Footer Carta --> 
+                            <div class="py-2 bg-dark text-center card-footer">
+                                <div class="col">
+                                    <button class="btn btn-light" id="boton_mostrar_infosalones" onclick="mostrarSalones()">Mostrar Salones</button>
+                                    <button class="btn btn-light d-none" id="boton_calcular_edad" onclick="calcularEdadPromedio()">Calcular Edad Promedio</button>
+                                    <button class="btn btn-light d-none" id="boton_reiniciar_datos_edad" onclick="reiniciarDatosEdad()">Reiniciar Datos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Pie de Pagina -->
+    <footer>
+        <p>Practica JavaScript Programacion</p>
+    </footer>
+    <script src="../JS/Ejercicio8.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica JS</title>
+    <link rel="stylesheet" href="../CSS/styleEjercicios.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Tomas Javier Rodriguez Ocampo -->
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Ejercicios JavaScript</h1>
+    </header>
+    <!-- Cuerpo -->
+    <main>
+        <!-- Contenedor Principal -->
+        <div class="container mt-5">
+            <!-- Contenedor Carta -->
+            <div class="content">
+                <div class="g-3 mb-3 row">
+                    <div class="order-xx1-1 order-xx1-3 col-sm-8 mx-auto">
+                        <!-- Margen Carta --> 
+                        <div class="h-100 card shadow">
+                            <!-- Encabezado Carta --> 
+                            <div class="py-2 bg-dark card-header">
+                                <div class="col">
+                                    <h3 class="card-title text-center text-white">Compañia Automotriz</h3>
+                                </div>
+                            </div>
+                            <!-- Cuerpo Carta --> 
+                            <div class="d-flex flex-column align-items-between h-100 card-body">
+                                <!-- Titulo -->
+                                <div class="col mb-3">
+                                    <h4 class="card-title text-center">Ingrese los siguientes datos:</h4>
+                                </div>
+                                <!-- Input y Label Flotante -->
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="cantidad_autos" min="1" placeholder="Ingrese la cantidad de autos que posee">
+                                    <label for="cantidad_autos">Ingrese la cantidad de autos que posee</label>
+                                </div>
+                                <!-- Autos a ingresar -->
+                                <div id="autos_ingresados">
+                                    <!-- En este div se va a generar el campo donde el gerente va a ingresar las claves y el valor que tiene cada auto -->
+                                </div>
+                                <!-- Resultado calculo de impuestos autos -->
+                                <div id="resultado_impuesto_autos">
+                                    <!-- En este div se va a mostrar el resultado de cuanto se tiene que pagar por cada auto mas el impuesto y total por todo -->
+                                </div>
+                            </div> 
+                            <!-- Footer Carta --> 
+                            <div class="py-2 bg-dark text-center card-footer">
+                                <div class="col">
+                                    <button class="btn btn-light" id="boton_mostrar_autos" onclick="mostrarAutosIngresados()">Mostrar Autos</button>
+                                    <button class="btn btn-light d-none" id="boton_calcular_impuesto_autos" onclick="calcularImpuestosAutos()">Calcular Impuestos a Pagar</button>
+                                    <button class="btn btn-light d-none" id="boton_reiniciar_impuesto_autos" onclick="reiniciarDatosImpuestosAutos()">Reiniciar Datos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Pie de Pagina -->
+    <footer>
+        <p>Practica JavaScript Programacion</p>
+    </footer>
+    <script src="../JS/Ejercicio16.js"></script>
+</body>
+</html>
